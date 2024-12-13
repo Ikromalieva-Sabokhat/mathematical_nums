@@ -1,9 +1,9 @@
-def transpose_matrix(matrix):
-    transposed_matrix=[]
-    for i in range(len(matrix[0])): #3
-        new_line = []
-        for j in range(len(matrix)):#4
-            new_line.append(matrix[j][i])
-        transposed_matrix.append(new_line)
-    return transposed_matrix
-
+def is_disarium_number(num):
+    str_num = str(num)
+    num_len = len(str_num)
+    num_sum = 0
+    for i in range(1, num_len + 1):
+        num_sum += int(str_num[i-1]) ** i
+    if num_sum == num:
+        return True
+    else: return False
