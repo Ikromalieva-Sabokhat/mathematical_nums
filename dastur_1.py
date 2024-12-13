@@ -6,3 +6,4 @@ def transpose_matrix(matrix):
             new_line.append(matrix[j][i])
         transposed_matrix.append(new_line)
     return transposed_matrix
+
